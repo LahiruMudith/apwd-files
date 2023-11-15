@@ -112,7 +112,7 @@ const z = 20;
 const x = 30;
 
 console.log("Equal : ", z==x );
-console.log("Not Equal : ", z==x );
+console.log("Not Equal : ", z!=x );
 console.log("Greater Than : ", z>x );
 console.log("Lower Than : ", z<x );
 console.log("Greater Than or Equal : ", z>=x );
@@ -129,8 +129,42 @@ console.log("AND : ", o && p);
 console.log("AND : ", o || p);
 
 // NOT (!)
-console.log("AND : ", !o);
+console.log("Not : ", !o);
+console.log("Not: ", !p );
+console.log("Logical Test", !((o||p) || (o&&p)));
 
 
 
-// Next Day ----> Function
+// Function
+function normalFuntion(name , age){
+    console.log(name);
+    console.log(age);
+}
+
+normalFuntion("Lahiru", 17);
+
+//Arro Funtion
+// const arroFuntion = () => {
+//     console.log("My name is : Lahiru");
+// }
+// arroFuntion();
+
+function NumberEqual (age1, age2){
+    const equal = age1 + age2;
+    // console.log("Equals :", equal);
+    return equal;
+}
+
+const value = NumberEqual(20, 20);
+console.log(value);
+
+
+
+var numbers = (num1, num2, num3, num4,) => {
+        var sum = num1 + num2 + num3 + num4;
+        var averange = sum/4;
+        return averange;
+}
+        
+var sum = numbers(40,40,40,40);
+console.log(sum);
