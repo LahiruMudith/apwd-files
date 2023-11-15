@@ -168,3 +168,13 @@ var numbers = (num1, num2, num3, num4,) => {
         
 var sum = numbers(40,40,40,40);
 console.log(sum);
+
+// If Condition 
+const marks = 36;
+if (80 < marks) {
+    console.log("A");    
+}else if(50<marks){
+    console.log("C");
+}else{
+    console.log("S");
+}
