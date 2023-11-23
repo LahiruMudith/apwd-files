@@ -253,6 +253,22 @@ const person = {
 }
 
 const name1 = person.name
-// console.log(name1);
+console.log(name1);
 person.run();
 person.walk();
+
+
+//-------------Event-------------
+
+function clickme(){
+    // alert("Click Me Button Test ");
+    // console.log("Click Me Button Test");
+    const input = document.getElementById("input-1").value
+    console.log(input);
+}
+
+function onChange(){
+    // alert("OnChange Event");
+    // console.log("OnChange Event");
+}
+
