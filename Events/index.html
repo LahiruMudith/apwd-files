@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <h1 text-align:"center" style="text-align: center; color: red;">Events</h1>
+    //Git Hub
+    <div style="width: 18rem;">
+        <div class = "card w-100 m-2">
+          <h4 class="card-title">Events</h4>
+          <div class="card-body w-100 mb-3">
+            <input type="text" class="form-control" id="frist" onclick="fristOnClick()"  placeholder="Frist Name">
+            <input type="text" class="form-control" id="last" onclick="lastOnClick()"  placeholder="Last Name">
+          </div>
+
+      <hr>
+
+      <div class="card-body w-100 mb-3">
+        <input type="number" class="form-control" id="n-1" placeholder="Enter Number 1">
+        <input type="number" class="form-control" id="n-2" placeholder="Enter Number 2"> <br>
+        <div class="text-center">
+            <h5 id="NumberDis"></h5>
+        </div>
+        <br><button type="button" class="btn btn-primary" onclick="numbers()">Done</button>
+      </div>
+
+      <hr>
+
+      <div class="card-body w-100 mb-3">
+        <input type="number" class="form-control" id="num-4" onkeyup="numberSum()" placeholder="Enter Numbers">
+        <div class="text-center"> <br>
+            <h5 id="NumberDisplay"></h5>
+    </div>
+</div>
+
+    
+
+    <script text="text/javascript" src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
