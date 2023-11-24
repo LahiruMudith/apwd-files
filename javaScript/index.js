@@ -270,5 +270,25 @@ function clickme(){
 function onChange(){
     // alert("OnChange Event");
     // console.log("OnChange Event");
+    // const input1 = document.getElementById("input-1").value
+    // console.log(input1);
 }
 
+function mouseHorver() {
+    document.getElementById("mouse").style.backgroundColor = "green";
+    document.getElementById("mouse").style.width = "300px"
+}
+
+function mouseOut() {
+    document.getElementById("mouse").style.backgroundColor = "red";
+    document.getElementById("mouse").style.width = "200px"
+
+}
+
+function down() {
+    console.log("Print Down");
+}
+
+function up() {
+    console.log("Print up");
+}
