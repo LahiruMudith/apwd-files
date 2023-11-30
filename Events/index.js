@@ -32,3 +32,55 @@ function numberSum() {
     document.getElementById("NumberDisplay").innerText = sum;
 
 }
+
+// function Position() {
+    
+//     const text = document.getElementById("text"); 
+
+//     if (text=="intern") {
+//         console.log("Intern Software engineer");
+//     }else if (text=="ase") {
+//         console.log("Associate Software engineer");
+//     }else if (text=="se") {
+//         console.log("Software engineer");
+//     }else if (text=="sse") {
+//         console.log("Senior Software engineer");
+//     }else if (text=="alt") {
+//         console.log("Assistant Tech Lead");
+//     }else if (text=="tl") {
+//         console.log("Tech Lead");
+//     }else  {
+//         console.log("Erro key words...!");
+//     }
+// }
+
+function save() {
+    const input = document.getElementById("input").value
+    
+    
+    
+    for (const i = 1; i<100; i++ ) {
+        inputsArray.push(input)
+        console.log("Added"  +" "+ input);
+        document.getElementById("InputDisplay").innerHTML = input
+    }
+}
+
+function LoadAll(){
+    // const intArray = inputs
+    document.getElementById("InputDisplay").innerHTML = inputsArray
+}
+
+function savedata() {
+   const name =  document.getElementById("name").value.toUpperCase();
+   const password =  document.getElementById("password").value.toUpperCase();
+
+    if (name == "LAHIRU" && password==1234){
+        document.getElementById("Data").innerHTML = "Login Successfully !"
+    }else {
+        document.getElementById("Data").innerHTML = "Login Fail !"
+    }
+
+}
+
+
