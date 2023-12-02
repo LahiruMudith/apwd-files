@@ -84,3 +84,34 @@ function savedata() {
 }
 
 
+const inputNumber =  document.getElementById("inputNumber").value
+const dividNum = []
+const genaratenum = []
+
+
+for (let k=0; k<50; k++){
+    let x = Math.floor(Math.random() * 100);
+    genaratenum[k] = x;
+
+
+
+}
+console.log(genaratenum);
+document.getElementById("gNum").innerHTML = genaratenum;
+
+
+function LoadAllNum() {
+    const inputNumber =  document.getElementById("inputNumber").value
+    
+    for (let i = 0; i<50; i++) {
+       
+        if (inputNumber / genaratenum[i] == 1){
+            dividNum[i] = genaratenum[i]
+        }
+    }
+
+document.getElementById("Num").innerHTML = dividNum;
+}
+
+
+
